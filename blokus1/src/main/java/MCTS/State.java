@@ -167,27 +167,12 @@ public class State{
                 if (flip) {
                     piece.flipOver();
                 }
-                moves.addAll(getValidMoves2(piece,player));
+                moves.addAll(getValidMovesForPos(piece,player));
             }
         }
         return moves;
     }
-//        for (int i = 0; i < board.getSize(); i++) {
-//            for (int j = 0; j < board.getSize(); j++) {
-//                if (!(board.getBoard()[i][j].getColor() != BColor.WHITE && board.getBoard()[i][j].getColor() != player.getColor() &&  board.getBoard()[i][j].getValue() == Shape.PIECE)) {
-//                    Square square = new Square(i, j, player.getColor());
-//                    try {
-//                        if (board.isValidPiecePlacement(piece, square, player))
-//                            moves.add(new Move(piece, square));
-//                    } catch (GameException ignored) {
-//                    }
-//                }
-//            }
-//        }
-//        return moves;
-//    }
-
-    public List<Move> getValidMoves2(Piece piece, Player player) {
+    public List<Move> getValidMovesForPos(Piece piece, Player player) {
         List<Move> validMoves = new ArrayList<>();
         for (int i = 0; i < board.getSize(); i++) {
             for (int j = 0; j < board.getSize(); j++) {
