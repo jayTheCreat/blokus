@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <VBox layoutX="14.0" layoutY="211.0" prefHeight="175.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Button fx:id="playbtn" mnemonicParsing="false" onMouseClicked="#playBtnClicked" text="PLAY" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="43.0" text="EXIT" />
+         </children>
+      </VBox>
+      <Pane layoutX="323.0" layoutY="188.0">
+         <children>
+            <ChoiceBox layoutX="113.0" prefWidth="150.0" />
+            <Label layoutX="1.0" layoutY="6.0" prefHeight="17.0" prefWidth="113.0" text="Number Of Players:" />
+            <Label layoutX="1.0" layoutY="35.0" prefHeight="17.0" prefWidth="94.0" text="Number of CPU:" />
+            <ChoiceBox layoutX="113.0" layoutY="31.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+      <StackPane layoutX="84.0" layoutY="29.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
